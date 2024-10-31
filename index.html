@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+</head>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="shortcut icon" href="./assets/logo-corazon.svg" type="image/svg+xml">
+
+<body>
+    <header id="header" class="centro">
+        <img src="./assets/3corazones.png" alt="imagen-de-corazones" class="img__corazones" id="header__logo">
+        <p id="header__titulo">Alura<span class="color__rojo">Geek</span></p>
+    </header>
+    
+    <!-- Sección Principal -->
+    <main id="main">
+        <section id="main__productos__contenedor" class="centro">
+            <h1 id="productos__contenedor__titulo">Mis Productos</h1>
+            <ul id="productos-contenedor">
+                <!-- Aquí se agregan dinámicamente los productos -->
+            </ul>
+        </section>
+
+        <section id="formulario__contenedor" class="centro">
+            <form class="centro" id="form">
+                <h1 id="formulario__titulo">Agregar Productos</h1>
+                
+                <!-- Mensaje de éxito/error -->
+                <div id="mensaje" class="alert" style="display: none;"></div>
+
+                
+                <!-- Campos de formulario -->
+                <input type="text" placeholder="nombre..." id="descripcion" class="form__input" required>
+                <input type="number" step="0.01" placeholder="precio..." id="precio" class="form__input" required>
+                <input type="text" placeholder="imagen (url)..." id="imagen" class="form__input" required>
+                
+                <!-- Botones de enviar y limpiar -->
+                <div class="boton__enviar" id="btn__enviar">
+                    <button type="submit" id="form__btn__enviar" class="btn__enviar__formulario">Enviar</button>
+                    <button type="reset" id="form__btn__limpiar" class="btn__limpiar__formulario">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    
+    <!-- Footer -->
+    <footer id="footer" class="centro">
+        <div id="footer__logo__contenedor" class="centro">
+            <img src="./assets/3corazones.png" alt="imagen-de-corazones" class="img__corazones" id="footer__logo">
+            <p id="footer__titulo__logo">Alura<span class="color__rojo">Geek</span></p>
+        </div>
+        <p id="footer__text">Desarrollado por <a href="https://github.com/MarioDev0596" target="_blank" style="text-decoration: none; color: inherit;">Mario</a></p>
+        <p id="footer__copyright">Alura Latam - 2024</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./js/productos.js" type="module"></script>
+    <script src="./js/form.js" type="module"></script>
+</body>
+</html>

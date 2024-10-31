@@ -1,0 +1,40 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "descripcion": "Mario Kart 8 Deluxe Nintendo Switch",
+      "precio": "16.00",
+      "imagen": "https://storegamesperu.com/files/images/thumbs/productos_300x400_1637877600-mario-kart-8-deluxe.jpg"
+    },
+    {
+      "id": "2",
+      "descripcion": "EA SPORTS FC 25 Playstation 5",
+      "precio": "50.00",
+      "imagen": "https://plazavea.vteximg.com.br/arquivos/ids/29586156-1000-1000/image-7e99f1ce1f6c4d3fa4c44519eefa2c71.jpg"
+    },
+    {
+      "id": "3",
+      "descripcion": "Cuphead - XBOX ONE",
+      "precio": "29.99",
+      "imagen": "https://gamestoreperu.com/files/images/productos/1649118850-cuphead-xbox-one-0.jpg"
+    },
+    {
+      "id": "4",
+      "descripcion": "God of War Ragnarok Ps5",
+      "precio": "50.00",
+      "imagen": "https://plazavea.vteximg.com.br/arquivos/ids/25994644-1000-1000/image-fde057f1faf749748c2b4d37eb1fec98.jpg"
+    },
+    {
+      "id": "5",
+      "descripcion": "Overcooked 2 - NINTENDO SWITCH",
+      "precio": "13.50",
+      "imagen": "https://gamestoreperu.com/files/images/productos/1640121658-overcooked-2-nintendo-switch.jpg"
+    },
+    {
+      "id": "6",
+      "descripcion": "World War Z - NINTENDO SWITCH",
+      "imagen": "https://gamestoreperu.com/files/images/productos/1642549479-world-war-z-nintendo-switch.jpg",
+      "precio": "$ 18.99"
+    }
+  ]
+}
