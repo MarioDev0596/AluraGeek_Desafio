@@ -10,11 +10,11 @@ function mostrarAlerta(mensajeTexto, tipo) {
     mensaje.classList.add(tipo); // Agrega la clase de estilo (success o error)
     mensaje.style.display = "block"; 
 
-    // Oculta el mensaje después de 8 segundos
+    // Oculta el mensaje después de 4 segundos
     setTimeout(() => {
         mensaje.style.display = "none"; 
         mensaje.classList.remove(tipo); 
-    }, 8000); // Duración en milisegundos (8 segundos)
+    }, 4000); // Duración en milisegundos (4 segundos)
 }
 
 // Función para validar si la URL de la imagen es válida
@@ -45,7 +45,7 @@ async function crearProducto(event) {
     if (resultado) {
         mostrarAlerta("Producto agregado con éxito.", "success");
         form.reset();
-        await listarProductos(); 
+        location.reload(); 
     } else {
         mostrarAlerta("Error al agregar el producto. Inténtalo de nuevo.", "error");
     }

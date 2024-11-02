@@ -117,8 +117,10 @@ ul {
   animation: float 1.8s infinite alternate;
   flex-direction: column;
   justify-content: space-between;
-  align-items: flex-start;
   box-shadow: -10px 10px 10px -5px var(--color-black-opacity);
+  justify-content: center; 
+  align-items: center; 
+  margin: 0 auto; 
 }
 
 /* Flotación */
@@ -207,7 +209,7 @@ ul {
   border-radius: 10px;
 }
 
-.producto__descripcion {
+.producto__descripcion { 
   font-family: var(--font-IBM);
   font-size: 1rem;
 }
@@ -222,6 +224,9 @@ ul {
   font-family: var(--font-IBM);
   font-weight: bold;
   font-size: 1rem;
+  position: absolute;
+  left: 10px; /* Ajusta según tu preferencia */
+  bottom: 10px; /* Ajusta según tu preferencia */
 }
 
 .icono__eliminar{
@@ -320,8 +325,6 @@ ul {
   background-color: red;
   color: white;
 }
-
-
 
 
 /* Contenedor de los botones */

@@ -26,7 +26,7 @@ async function enviarProductos(descripcion, imagen, precio) {
             body: JSON.stringify({
                 descripcion,
                 imagen,
-                precio: `$ ${precio}`
+                precio: `${precio}`
             })
         });
 

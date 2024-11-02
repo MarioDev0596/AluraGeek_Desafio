@@ -14,13 +14,16 @@ function crearCard(descripcion, precio, imagen, id) {
     imgProducto.alt = "imagen-producto";
     imgProducto.className = "imagen__producto";
 
+    // Limitar la descripción solo si excede los 28 caracteres
+    const descripcionLimitada = descripcion.length > 28 ? `${descripcion.substring(0, 28)}...` : descripcion;
+
     const descripcionProducto = document.createElement("p");
     descripcionProducto.className = "producto__descripcion";
-    descripcionProducto.textContent = descripcion;
+    descripcionProducto.textContent = descripcionLimitada;
 
     const precioProducto = document.createElement("p");
     precioProducto.className = "producto__precio";
-    precioProducto.textContent = precio;
+    precioProducto.textContent = `$ ${precio}`; 
 
     const iconoEliminar = document.createElement("img");
     iconoEliminar.alt = "icono-eliminar";
@@ -72,13 +75,12 @@ function mostrarAlerta(mensajeTexto, tipo) {
     mensaje.classList.add(tipo); // Agrega la clase de estilo (success o error)
     mensaje.style.display = "block"; // Muestra el contenedor de mensaje
 
-    // Oculta el mensaje después de 8 segundos
+    // Oculta el mensaje después de 4 segundos
     setTimeout(() => {
         console.log("Ocultando la alerta");
         mensaje.style.display = "none"; // Oculta el mensaje
-        mensaje.classList.remove(tipo); // Elimina la clase de estilo
-    }, 8000); // Duración en milisegundos (8 segundos)
+        mensaje.classList.remove(tipo); 
+    }, 4000); 
 }
-
 
 listarProductos();
