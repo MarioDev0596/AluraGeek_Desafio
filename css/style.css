@@ -121,6 +121,7 @@ ul {
   justify-content: center; 
   align-items: center; 
   margin: 0 auto; 
+  min-height: 280px;
 }
 
 /* Flotación */
